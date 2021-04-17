@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+body{
+  background-color: #f1f3f6 !important;
+}
+.header{
+  background-color:#fff ;
+}
+.gameBoard{
+ height:75vh  /*75% of viewport =>  vh stands for view port height if view port is 1000px height
+   so it would be divided is 100% and 1vh is 10px hence when we change device
+   it will adjust itself*/
+}
+.game-square{
+  /* gamesquare is inside gameboard now question comes how to get 3 by 3 matrix in 
+  side board =>we can do it by making height and widht of each square 100/3%
+  this will take 100% of the parent element and divide it in 3 equal parts */
+  width: 33.33%;
+  height: 33.33%;
+}
+.bt{
+  border-top:5px solid #09f !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bb{
+  border-bottom:5px solid #09f !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bsb{
+  border-left: 5px solid #09f !important;
+  border-right: 5px solid #09f !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.x10{
+  font-size:5rem ;
 }
-
-.App-link {
-  color: #61dafb;
+.ress{
+  background-color: orange;
+  height: 10vh;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.winner{
+  margin-bottom: 20px;
 }
